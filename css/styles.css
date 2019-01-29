@@ -1,0 +1,371 @@
+/* styles.scss */
+body {
+  align-items: center;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+body .container {
+  height: 320px;
+  width: 320px;
+}
+
+#clock {
+  background: white;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(7, 7, 7, 0.1), 0 16px 64px rgba(7, 7, 7, 0.1), inset 0 8px 24px rgba(7, 7, 7, 0.1), inset 0 32px 0 rgba(202, 202, 202, 0.1), inset 0 -16px 0 rgba(202, 202, 202, 0.2);
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+}
+#clock .minute-dots {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#clock .minute-dots span {
+  height: calc(100% - 16px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: top;
+  width: 0;
+}
+#clock .minute-dots span:nth-child(0) {
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(1) {
+  transform: rotate(6deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(2) {
+  transform: rotate(12deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(3) {
+  transform: rotate(18deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(4) {
+  transform: rotate(24deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(5) {
+  transform: rotate(30deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(6) {
+  transform: rotate(36deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(7) {
+  transform: rotate(42deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(8) {
+  transform: rotate(48deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(9) {
+  transform: rotate(54deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(10) {
+  transform: rotate(60deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(11) {
+  transform: rotate(66deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(12) {
+  transform: rotate(72deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(13) {
+  transform: rotate(78deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(14) {
+  transform: rotate(84deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(15) {
+  transform: rotate(90deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(16) {
+  transform: rotate(96deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(17) {
+  transform: rotate(102deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(18) {
+  transform: rotate(108deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(19) {
+  transform: rotate(114deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(20) {
+  transform: rotate(120deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(21) {
+  transform: rotate(126deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(22) {
+  transform: rotate(132deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(23) {
+  transform: rotate(138deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(24) {
+  transform: rotate(144deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(25) {
+  transform: rotate(150deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(26) {
+  transform: rotate(156deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(27) {
+  transform: rotate(162deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(28) {
+  transform: rotate(168deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(29) {
+  transform: rotate(174deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(30) {
+  transform: rotate(180deg) translate(-50%, -50%);
+}
+#clock .minute-dots span:nth-child(5n)::before, #clock .minute-dots span:nth-child(5n)::after {
+  background: none;
+  border: 1px solid #070707;
+  height: 4px;
+  width: 4px;
+}
+#clock .minute-dots span::before, #clock .minute-dots span::after {
+  background: #070707;
+  border-radius: 50%;
+  content: "";
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+}
+#clock .minute-dots span::before {
+  top: 0;
+}
+#clock .minute-dots span::after {
+  bottom: 0;
+}
+#clock .minute-numbers {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#clock .minute-numbers div {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 32px);
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform-origin: top;
+  width: 0;
+}
+#clock .minute-numbers div:nth-child(0) {
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+#clock .minute-numbers div:nth-child(1) {
+  transform: rotate(30deg) translate(-50%, -50%);
+}
+#clock .minute-numbers div:nth-child(2) {
+  transform: rotate(60deg) translate(-50%, -50%);
+}
+#clock .minute-numbers div:nth-child(3) {
+  transform: rotate(90deg) translate(-50%, -50%);
+}
+#clock .minute-numbers div:nth-child(4) {
+  transform: rotate(120deg) translate(-50%, -50%);
+}
+#clock .minute-numbers div:nth-child(5) {
+  transform: rotate(150deg) translate(-50%, -50%);
+}
+#clock .minute-numbers div:nth-child(6) {
+  transform: rotate(180deg) translate(-50%, -50%);
+}
+#clock .minute-numbers div span {
+  color: #070707;
+  font: bold 9px "Helvetica", sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#clock .minute-numbers div span:nth-child(1) {
+  top: 0;
+}
+#clock .minute-numbers div span:nth-child(2) {
+  bottom: 0;
+}
+#clock .minute-numbers div span.flip {
+  transform: rotate(-180deg) translateX(-50%);
+  transform-origin: left;
+}
+#clock .minute-hand {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  z-index: 5;
+}
+#clock .minute-hand::before {
+  background: #cacaca;
+  border: 4px solid #16387f;
+  border-radius: 50%;
+  box-sizing: border-box;
+  content: "";
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  z-index: 5;
+}
+#clock .minute-hand span {
+  background: #16387f;
+  height: 200px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+}
+#clock .minute-hand span::after {
+  background: #16387f;
+  border-radius: 50%;
+  content: "";
+  height: 9px;
+  position: absolute;
+  bottom: -1px;
+  left: -3px;
+  width: 9px;
+}
+#clock .hour-dots {
+  height: 140px;
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: rotate(15deg) translateX(-50%);
+  transform-origin: left;
+  width: 140px;
+}
+#clock .hour-dots span {
+  height: calc(100% - 16px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: top;
+  width: 0;
+}
+#clock .hour-dots span:nth-child(0) {
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+#clock .hour-dots span:nth-child(1) {
+  transform: rotate(30deg) translate(-50%, -50%);
+}
+#clock .hour-dots span:nth-child(2) {
+  transform: rotate(60deg) translate(-50%, -50%);
+}
+#clock .hour-dots span:nth-child(3) {
+  transform: rotate(90deg) translate(-50%, -50%);
+}
+#clock .hour-dots span:nth-child(4) {
+  transform: rotate(120deg) translate(-50%, -50%);
+}
+#clock .hour-dots span:nth-child(5) {
+  transform: rotate(150deg) translate(-50%, -50%);
+}
+#clock .hour-dots span:nth-child(6) {
+  transform: rotate(180deg) translate(-50%, -50%);
+}
+#clock .hour-dots span::before, #clock .hour-dots span::after {
+  background: #070707;
+  border-radius: 50%;
+  content: "";
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+}
+#clock .hour-dots span::before {
+  top: 0;
+}
+#clock .hour-dots span::after {
+  bottom: 0;
+}
+#clock .hour-numbers {
+  height: 164px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 164px;
+}
+#clock .hour-numbers div {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 32px);
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform-origin: top;
+  width: 0;
+}
+#clock .hour-numbers div:nth-child(0) {
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+#clock .hour-numbers div:nth-child(1) {
+  transform: rotate(30deg) translate(-50%, -50%);
+}
+#clock .hour-numbers div:nth-child(2) {
+  transform: rotate(60deg) translate(-50%, -50%);
+}
+#clock .hour-numbers div:nth-child(3) {
+  transform: rotate(90deg) translate(-50%, -50%);
+}
+#clock .hour-numbers div:nth-child(4) {
+  transform: rotate(120deg) translate(-50%, -50%);
+}
+#clock .hour-numbers div:nth-child(5) {
+  transform: rotate(150deg) translate(-50%, -50%);
+}
+#clock .hour-numbers div:nth-child(6) {
+  transform: rotate(180deg) translate(-50%, -50%);
+}
+#clock .hour-numbers div span {
+  color: #070707;
+  font: bold 9px "Helvetica", sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#clock .hour-numbers div span:nth-child(1) {
+  top: 0;
+}
+#clock .hour-numbers div span:nth-child(2) {
+  bottom: 0;
+}
+#clock .hour-numbers div span.flip {
+  transform: rotate(-180deg) translateX(-50%);
+  transform-origin: left;
+}
+#clock .hour-numbers div:nth-child(1) span:nth-child(1) {
+  transform: rotate(-30deg) translate(-2px, 0px);
+}
+#clock .hour-numbers div:nth-child(2) span:nth-child(1) {
+  transform: rotate(-60deg) translate(-2px, -2px);
+}
+
+/*# sourceMappingURL=styles.css.map */
