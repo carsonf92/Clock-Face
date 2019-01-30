@@ -31,13 +31,17 @@ body {
 
 #clock {
 	background: white;
-	border: 4px solid white;
+	background: radial-gradient(at 65% 35%, white, $white, white);
+	border: 2px solid white;
 	border-radius: 50%;
 	box-shadow: 0 2px 4px rgba($black, 0.1),
 				0 16px 64px rgba($black, 0.1),
 				inset 0 8px 24px rgba($black, 0.1),
-				inset 0 32px 0 rgba($gray, 0.1),
-				inset 0 -16px 0 rgba($gray, 0.2);
+				inset 0 40px 0 rgba($gray, 0.1),
+				inset 0 -16px 0 rgba($gray, 0.2),
+				0 0 0px 2px white,
+				0 0 0 3px $white,
+				0 0 0 5px #ebebeb;
 				box-sizing: border-box;
 	height: 100%;
 	position: relative;
@@ -152,6 +156,7 @@ body {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		transform-origin: top;
 		width: 0;
 		z-index: 10;
 
@@ -337,7 +342,7 @@ body {
 		top: 94px;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		transform-origin: center;
+		transform-origin: top;
 		width: 0;
 		z-index: 5;
 
@@ -469,7 +474,7 @@ body {
 		bottom: 20px;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		transform-origin: center;
+		transform-origin: top;
 		width: 0;
 		z-index: 5;
 
@@ -509,7 +514,6 @@ body {
 			}
 		}
 	}
-
 } // #clock
 
 
